@@ -1,9 +1,9 @@
-FROM arm64v8/ubuntu:22.04
+ROM arm64v8/ubuntu:22.04
 
 RUN apt-get update -y && apt-get install -y \
        --no-install-recommends \
-       automake	\
-       bash-completion	\
+       automake \
+       bash-completion  \
        bc \
        bison \
        build-essential \
@@ -12,6 +12,7 @@ RUN apt-get update -y && apt-get install -y \
        cpio \
        curl \
        dpkg-sig \
+       file \
        flex \
        golang-go \
        g++ \
@@ -28,9 +29,11 @@ RUN apt-get update -y && apt-get install -y \
        pkg-config \
        python3-dev \
        python3-pip \
+       rsync \
        swig \
        qemu-system \
        u-boot-tools \
+       unzip \
        vim \
        wget
 
