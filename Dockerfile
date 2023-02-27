@@ -11,6 +11,7 @@ RUN apt-get update -y && apt-get install -y \
        cmake \
        cpio \
        curl \
+       device-tree-compiler \
        dpkg-sig \
        file \
        flex \
