@@ -1,4 +1,4 @@
-ROM arm64v8/ubuntu:22.04
+FROM arm64v8/ubuntu:22.04
 
 RUN apt-get update -y && apt-get install -y \
        --no-install-recommends \
@@ -32,6 +32,8 @@ RUN apt-get update -y && apt-get install -y \
        python3-pip \
        rsync \
        swig \
+       swtpm \
+       qemu-utils \       
        qemu-system \
        u-boot-tools \
        unzip \
